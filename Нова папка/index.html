@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фрейми в Изкуствения Интелект</title>
+  
+  <!-- AOS CSS за анимации -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <!-- Font Awesome за икони -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: #34495e;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 10px 0;
+    }
+    
+    .navbar li {
+      margin: 0 15px;
+    }
+    
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+      color: #2c3e50;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ecf0f1;
+      margin-top: 40px;
+    }
+    
+    /* Тъмна тема */
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+      font-size: 18px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    button#themeBtn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .timeline-item {
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .timeline-year {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .timeline-content {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Фрейми в Изкуствения Интелект</h1>
+</header>
+
+<!-- Навигация с икони -->
+<nav>
+  <ul class="navbar">
+    <li><a href="#timeline"><i class="fas fa-calendar-alt"></i> История</a></li>
+    <li><a href="#intro"><i class="fas fa-book"></i> Въведение</a></li>
+    <li><a href="#structure"><i class="fas fa-cogs"></i> Структура</a></li>
+    <li><a href="#applications"><i class="fas fa-th-large"></i> Приложения</a></li>
+    <li><a href="#comparison"><i class="fas fa-chart-bar"></i> Сравнение</a></li>
+    <li><a href="#conclusion"><i class="fas fa-check-circle"></i> Заключение</a></li>
+  </ul>
+</nav>
+
+<!-- История на фреймите (Timeline) -->
+<section id="timeline" data-aos="fade-up">
+  <h2>История на Фреймите</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">1974</div>
+      <div class="timeline-content">Марвин Мински предлага концепцията за фрейми в своята статия.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">1980</div>
+      <div class="timeline-content">Първи експертни системи, използващи фрейми.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2000</div>
+      <div class="timeline-content">Развитие на фреймите в семантични технологии и обработка на естествен език.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Въведение с анимация -->
+<section id="intro" data-aos="fade-up">
+  <h2>Въведение</h2>
+  <p>Фреймът е формална структура, вдъхновена от човешкото мислене, която комбинира логическа строгост със семантична гъвкавост. Той намира приложение в много области на изкуствения интелект.</p>
+  <img src="C:\Users\velik\Desktop\Нова папка\images\ai_image.jpg" alt="AI Illustration">
+</section>
+
+<!-- Структура на фрейма -->
+<section id="structure" data-aos="fade-up">
+  <h2>Структура на фрейма</h2>
+  <p>Всеки фрейм съдържа слотове с данни, стойности по подразбиране и връзки към други фрейми. Те позволяват богато представяне на знания.</p>
+  <img src="C:\Users\velik\Desktop\Нова папка\images\framestrc.jpg" alt="Frame Structure">
+</section>
+
+<!-- Приложения на фреймите -->
+<section id="applications" data-aos="fade-up">
+  <h2>Приложения</h2>
+  <ul>
+    <li>Експертни системи</li>
+    <li>Обработка на естествен език</li>
+    <li>Когнитивно моделиране</li>
+    <li>Роботика и планиране</li>
+  </ul>
+  <img src="C:\Users\velik\Desktop\Нова папка\images\nlp-important-use-cases.png" alt="NLP Example">
+</section>
+
+<!-- Сравнение с други методи -->
+<section id="comparison" data-aos="fade-up">
+  <h2>Сравнение с други методи</h2>
+  <p>Фреймите предлагат добър баланс между формализъм и интуитивност. Те се отличават от продукционни правила, семантични мрежи и онтологии.</p>
+  <img src=c:\Users\velik\Downloads\compare.jpg alt="Knowledge Representation">
+</section>
+
+<!-- Заключение -->
+<section id="conclusion" data-aos="fade-up">
+  <h2>Заключение</h2>
+  <p>Фреймите остават важен инструмент за моделиране на знания, благодарение на своята интуитивност и структура, близка до човешката логика.</p>
+</section>
+
+<!-- Бутони за тема и скролиране към върха -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+<button onclick="toggleTheme()" id="themeBtn">🌙</button>
+
+<footer>
+  <p>&copy; 2025  Автор: Кристиян Касабов</p>
+</footer>
+
+<!-- Скриптове за функционалности -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init(); // Инициализация на анимациите
+
+  // Скролиране до върха
+  window.onscroll = function() {
+    var btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  function topFunction() {
+    document.body.scrollTop = 0; // За Safari
+    document.documentElement.scrollTop = 0; // За Chrome, Firefox, IE и Opera
+  }
+
+  // Превключване на тъмна/светла тема
+  function toggleTheme() {
+    var body = document.body;
+    body.classList.toggle("dark-mode");
+
+    var themeBtn = document.getElementById("themeBtn");
+    if (body.classList.contains("dark-mode")) {
+      themeBtn.innerHTML = "🌞"; // Превключване към светла тема
+    } else {
+      themeBtn.innerHTML = "🌙"; // Превключване към тъмна тема
+    }
+  }
+</script>
+
+</body>
+</html>
